@@ -19,11 +19,28 @@ public class Numero {
 			pell2 = nextPell;
 		}
 	}
+	
+	private static boolean esNumeroDeLaSuerte(int numero) {
+		int suma = numero;
+		while (suma != 1 && suma != 4) {
+			int nuevaSuma = 0;
+			while (suma > 0) {
+				int digito = suma % 10;
+				int cuadrado = digito * digito;
+				nuevaSuma += cuadrado;
+				suma /= 10;
+			}
+			suma = nuevaSuma;
+		}
+		return (suma == 1);
+	}
 	public static void main(String[] args) {
 		int num = 5;
 		System.out.println("El factorial de " + num + " es " + factorial(num));
 		System.out.print("La serie de Pell: ");
 		pellSeries();
+		System.out.println("\n¿" + num + " es un número de la suerte? " + esNumeroDeLaSuerte(num));
+
 	}
 
 }
