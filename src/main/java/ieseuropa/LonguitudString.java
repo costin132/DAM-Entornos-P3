@@ -6,6 +6,8 @@ public class LonguitudString {
 		int longitud = nombre.length();
 		return "La longitud de la cadena es: " + longitud;
 	}
+	
+	
 
 	public static void main(String[] args) {
 		System.out.println(devolverLongitud("Hola mundo"));
