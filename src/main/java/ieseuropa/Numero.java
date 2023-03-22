@@ -34,12 +34,32 @@ public class Numero {
 		}
 		return (suma == 1);
 	}
+	
+	static boolean isArmstrong(int n) {   
+		int temp, digits=0, last=0, sum=0;
+		temp=n;
+		while(temp>0){   
+			temp = temp/10;   
+			digits++;   
+		}   
+		temp = n;   
+		while(temp>0){    
+			last = temp % 10; 
+			sum += (Math.pow(last, digits)); 
+			temp = temp/10;   
+		} 
+		if(n==sum)
+			return true;
+			else return false;   
+	}
+	
 	public static void main(String[] args) {
 		int num = 5;
 		System.out.println("El factorial de " + num + " es " + factorial(num));
 		System.out.print("La serie de Pell: ");
 		pellSeries();
 		System.out.println("\n¿" + num + " es un número de la suerte? " + esNumeroDeLaSuerte(num));
+		System.out.println("\n" + isArmstrong(153));
 
 	}
 
