@@ -2,8 +2,8 @@ package main.java.ieseuropa;
 
 public class Decimal {
 	
-	public static void ecuacionSegundoGrado(double a, double b, double c) {
-		double discriminante = b * b - 4 * a * c;
+	public static void ecuacionSegundoGrado(float a, float b, float c) {
+		float discriminante = b * b - 4 * a * c;
 		if (discriminante < 0) {
 			System.out.println("La ecuación no tiene soluciones reales.");
 		} else if (discriminante == 0) {
