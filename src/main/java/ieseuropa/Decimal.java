@@ -2,6 +2,7 @@ package main.java.ieseuropa;
 
 public class Decimal {
 
+
 	public static void ecuacionSegundoGrado(float a, float b, float c) {
 		float discriminante = b * b - 4 * a * c;
 		if (discriminante < 0) {
@@ -24,3 +25,15 @@ public class Decimal {
 		ecuacionSegundoGrado(a, b, c);
 	}
 }
+
+	public static double redondearAlAlza(float numero) {
+	        return Math.ceil(numero);
+	}
+	public static void main(String[] args) {
+		float numero = 3.2f;
+		double resultado = redondearAlAlza(numero);
+		System.out.println("El número " + numero + " redondeado hacia arriba es: " + resultado);
+	}   
+}
+
+
