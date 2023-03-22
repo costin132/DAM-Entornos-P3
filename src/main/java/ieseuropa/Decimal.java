@@ -10,5 +10,4 @@ public class Decimal {
 		// TODO Auto-generated method stub
 
 	}
-
 }
