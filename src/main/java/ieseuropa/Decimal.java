@@ -1,7 +1,7 @@
 package main.java.ieseuropa;
 
 public class Decimal {
-	
+
 	public static void ecuacionSegundoGrado(float a, float b, float c) {
 		float discriminante = b * b - 4 * a * c;
 		if (discriminante < 0) {
@@ -16,9 +16,11 @@ public class Decimal {
 		}
 	}
 
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		float a = 2;
+		float b = -5;
+		float c = 3;
 
+		ecuacionSegundoGrado(a, b, c);
 	}
 }
