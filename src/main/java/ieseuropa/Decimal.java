@@ -2,7 +2,7 @@ package main.java.ieseuropa;
 
 public class Decimal {
 	
-	public static int eliminarDecimales(double numero) {
+	public static int eliminarDecimales(float numero) {
 		return (int) numero;
 	}
 
