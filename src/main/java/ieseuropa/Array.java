@@ -1,5 +1,7 @@
 package main.java.ieseuropa;
 
+import java.util.Arrays;
+
 public class Array {
 	
 	public static double mediana (int [] a) {
@@ -15,11 +17,18 @@ public class Array {
 		return mediana;
 	}
 
+	public static void ordenarDeMenorAMayor(int[] array) {
+		Arrays.sort(array);
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int [] a = {2,4,8,3,1,7};
 		System.out.println(mediana(a));
-		System.out.println("Hola");
-	}
+		int[] numeros = { 3, 5, 1, 4, 2 };
+		System.out.println("Array antes del ordenamiento: " + Arrays.toString(numeros));
+		ordenarDeMenorAMayor(numeros);
+		System.out.println("Array después del ordenamiento: " + Arrays.toString(numeros));
 
+	}
 }
