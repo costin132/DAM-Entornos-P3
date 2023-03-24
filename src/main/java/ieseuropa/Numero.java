@@ -9,6 +9,17 @@ public class Numero {
 		}
 		return resultado;
 	}
+	
+	private static boolean esPrimo(int num) {
+		if (num < 2) return false;
+		if (num == 2) return true;
+		for (int i = 3; i <= Math.sqrt(num); i+=2) {
+		    if (num % i == 0) {
+			return false;
+		    }
+		}
+		return true;
+        }
 
 	private static void pellSeries() { 
 		int pell1 = 0, pell2 = 1;
@@ -49,11 +60,11 @@ public class Numero {
 	public static void main(String[] args) {
 		int num = 5;
 		System.out.println("El factorial de " + num + " es " + factorial(num));
+		System.out.println(esPrimo(17));
 		System.out.print("La serie de Pell: ");
 		pellSeries();
 		System.out.println("\n¿" + num + " es un número de la suerte? " + esNumeroDeLaSuerte(num));
 		System.out.println(sacarHoras(3680));
-
 	}
 
 }
