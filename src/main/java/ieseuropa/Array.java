@@ -12,9 +12,24 @@ public class Array {
 		}
 		return max;
 	}
+	
+
+	public static double mediaArray(int[] datos) {
+		int cantDatos = 0;
+		double acumulador = 0L;
+		for(int i = 0; i < datos.length; i++) {
+			acumulador = acumulador + datos[i];
+			cantDatos++;
+		}
+		return acumulador/cantDatos;
+	}
+	
 
 	public static void main(String[] args) {
 		System.out.println("El máximo es " + saberMaximo());
+		System.out.println(mediaArray(new int[] { 3, 14, 32, 1}));
+		System.out.println(mediaArray(new int[] { 12, 25, 22, 52}));
+		System.out.println(mediaArray(new int[] { 1, 84, 23, 43}));
 
 	}
 
