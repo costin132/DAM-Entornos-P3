@@ -12,7 +12,7 @@ public class OcurrenciasLetra {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Número de ocurrencias: " + contarLetra("Hola mundo", 'o'));
+		System.out.println("Número de ocurrencias:  " + contarLetra("Hola mundo", 'o'));
 
 	}
 }
