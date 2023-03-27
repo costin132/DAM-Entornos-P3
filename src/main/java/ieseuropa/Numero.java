@@ -9,6 +9,17 @@ public class Numero {
 		}
 		return resultado;
 	}
+	
+	private static boolean esPrimo(int num) {
+		if (num < 2) return false;
+		if (num == 2) return true;
+		for (int i = 3; i <= Math.sqrt(num); i+=2) {
+		    if (num % i == 0) {
+		    	return false;
+		    }
+		}
+		return true;
+  }
 
 	private static void pellSeries() { 
 		int pell1 = 0, pell2 = 1;
@@ -35,6 +46,7 @@ public class Numero {
 		return (suma == 1);
 	}
 	
+
 	static boolean isArmstrong(int n) {   
 		int temp, digits=0, last=0, sum=0;
 		temp=n;
@@ -50,17 +62,29 @@ public class Numero {
 		} 
 		if(n==sum)
 			return true;
-			else return false;   
-	}
+			else return false;
+  }
+
+	private static String sacarHoras(int segundos) {
+		int horas = 0;
+		int minutos = 0;
+		int seg = 0;
+		horas = segundos / 3600;
+		seg = segundos % 3600;
+		minutos = seg / 60;
+		seg = seg % 60;
+		return segundos + "seg son " + horas + "h, " + minutos + "min, "+ seg + "s.";
+  }
 	
 	public static void main(String[] args) {
 		int num = 5;
 		System.out.println("El factorial de " + num + " es " + factorial(num));
+		System.out.println(esPrimo(17));
 		System.out.print("La serie de Pell: ");
 		pellSeries();
 		System.out.println("\n¿" + num + " es un número de la suerte? " + esNumeroDeLaSuerte(num));
 		System.out.println("\n" + isArmstrong(153));
-
+		System.out.println(sacarHoras(3680));
 	}
 
 }
