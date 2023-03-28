@@ -52,23 +52,20 @@ public class Array {
 		return minimo;
 	}
 
-	public static void main(String[] args) {
-		int[] numeros = { 10, 5, 20, 3, 8 };
-		int minimo = calcularMinimo(numeros);
-		System.out.println("El mínimo es: " + minimo);
-	}
-
 	public static void ordenarDeMenorAMayor(int[] array) {
 		Arrays.sort(array);
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int[] numeros = { 10, 5, 20, 3, 8 };
+		int minimo = calcularMinimo(numeros);
+		System.out.println("El mínimo es: " + minimo);
 		System.out.println("El máximo es " + saberMaximo());
 		System.out.println(mediaArray(new int[] { 3, 14, 32, 1}));
 		System.out.println(mediaArray(new int[] { 12, 25, 22, 52}));
 		System.out.println(mediaArray(new int[] { 1, 84, 23, 43}));
-    int [] a = {2,4,8,3,1,7};
+    		int [] a = {2,4,8,3,1,7};
 		System.out.println(mediana(a));
 		int[] numeros = { 3, 5, 1, 4, 2 };
 		System.out.println("Array antes del ordenamiento: " + Arrays.toString(numeros));
