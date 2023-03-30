@@ -19,11 +19,17 @@ public class Decimal {
 	public static double redondearAlAlza(float numero) {
 	        return Math.ceil(numero);
 	}
+	
+	public static int eliminarDecimales(float numero) {
+		return (int) numero;
+	}
+	
 	public static void main(String[] args) {
 		float numero = 3.2f;
 		double resultado = redondearAlAlza(numero);
 		System.out.println("El número " + numero + " redondeado hacia arriba es: " + resultado);
 		ecuacionSegundoGrado(2,-5,3);
+		System.out.println(eliminarDecimales(34.456f));
 	}   
 }
 
