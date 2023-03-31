@@ -1,12 +1,14 @@
 package main.java.ieseuropa;
 
+import java.util.Scanner;
+
 public class Strings {
   
   public static void repeticionStrings (String a, String b){
       Scanner sc = new Scanner(System.in);
       int num = sc.nextInt();
 	    for (int i = 0; i < num; i++){
-	      System.out.print (a + " " + b + " ");
+	      System.out.print(a + " " + b + " ");
 	    }
 	}
   
@@ -40,9 +42,9 @@ public class Strings {
   public static void main(String[] args) {
 		// TODO Auto-generated method stub
     repeticionStrings("hola", "caracola");
-    aMayusculas("marcos");
-    aMinusculas("NaChO");
-    System.out.print (borrarAparicion ("Hola que tal estas?", "estas"));
+    System.out.println(aMayusculas("\nmarcos"));
+    System.out.println(aMinusculas("NaChO"));	
+    System.out.println(borrarAparicion ("Hola que tal estas?", "estas"));
 	System.out.println("Número de ocurrencias: " + contarLetra("Hola mundo", 'o'));
 	System.out.println(devolverLongitud("Hola mundo"));
 
