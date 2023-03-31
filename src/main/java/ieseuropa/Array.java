@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class Array {
 	
+
 	private static int saberMaximo() { 
 		int[] array = { 1, 3, 8, 5, 2 };
 		int max = array[0];
@@ -14,6 +15,7 @@ public class Array {
 		}
 		return max;
 	}
+
 	public static double mediaArray(int[] datos) {
 		int cantDatos = 0;
 		double acumulador = 0L;
@@ -39,6 +41,7 @@ public class Array {
 	}
 
 
+
 	public static int calcularMinimo(int[] array) {
 		int minimo = array[0];
 		for (int i = 1; i < array.length; i++) {
@@ -48,6 +51,8 @@ public class Array {
 		}
 		return minimo;
 	}
+
+
 
 	public static void ordenarDeMenorAMayor(int[] array) {
 		Arrays.sort(array);
@@ -62,7 +67,7 @@ public class Array {
 		System.out.println(mediaArray(new int[] { 3, 14, 32, 1}));
 		System.out.println(mediaArray(new int[] { 12, 25, 22, 52}));
 		System.out.println(mediaArray(new int[] { 1, 84, 23, 43}));
-    		int [] a = {2,4,8,3,1,7};
+    int [] a = {2,4,8,3,1,7};
 		System.out.println(mediana(a));
 		int[] numero = { 3, 5, 1, 4, 2 };
 		System.out.println("Array antes del ordenamiento: " + Arrays.toString(numero));
