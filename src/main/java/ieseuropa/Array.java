@@ -15,7 +15,6 @@ public class Array {
 		}
 		return max;
 	}
-	
 
 	public static double mediaArray(int[] datos) {
 		int cantDatos = 0;
@@ -42,6 +41,7 @@ public class Array {
 	}
 
 
+
 	public static int calcularMinimo(int[] array) {
 		int minimo = array[0];
 		for (int i = 1; i < array.length; i++) {
@@ -51,6 +51,8 @@ public class Array {
 		}
 		return minimo;
 	}
+
+
 
 	public static void ordenarDeMenorAMayor(int[] array) {
 		Arrays.sort(array);
@@ -65,14 +67,11 @@ public class Array {
 		System.out.println(mediaArray(new int[] { 3, 14, 32, 1}));
 		System.out.println(mediaArray(new int[] { 12, 25, 22, 52}));
 		System.out.println(mediaArray(new int[] { 1, 84, 23, 43}));
-    		int [] a = {2,4,8,3,1,7};
+    int [] a = {2,4,8,3,1,7};
 		System.out.println(mediana(a));
-		int[] numeros = { 3, 5, 1, 4, 2 };
-		System.out.println("Array antes del ordenamiento: " + Arrays.toString(numeros));
-		ordenarDeMenorAMayor(numeros);
-		System.out.println("Array después del ordenamiento: " + Arrays.toString(numeros));
-
-
+		int[] numero = { 3, 5, 1, 4, 2 };
+		System.out.println("Array antes del ordenamiento: " + Arrays.toString(numero));
+		ordenarDeMenorAMayor(numero);
+		System.out.println("Array después del ordenamiento: " + Arrays.toString(numero));
 	}
-
 }
